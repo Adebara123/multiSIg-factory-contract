@@ -22,7 +22,7 @@ constructor(address[] memory _validSigner) {
 }
 
 function withdrawEther(uint256 _amount) external {
-    bool _valid = validOwner();
+    // bool _valid = validOwner();
     Approve(ID);
     beneficiary[ID] = msg.sender;
     amount[ID] = _amount;
@@ -42,7 +42,7 @@ function validOwner() private view returns (bool success) {
 }
 
 function Approve(uint256 id) public {
-    bool valid = validOwner();
+    // bool valid = validOwner();
     uint256 value = amount[id];
     address _ben = beneficiary[id];
     assert(signed[msg.sender][id] == false);
