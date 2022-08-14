@@ -19,7 +19,7 @@ async function main() {
   //   await wallet.sendTransaction({ to: CONTRACTADDRESS, value: _value });
   //   console.log();
   //   console.log("contractBalanc", await MULTISIG.contractBalance());
-
+  //console.log("")
   await MULTISIG.withdrawEther(_value);
 }
 
