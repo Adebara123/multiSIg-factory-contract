@@ -11,7 +11,7 @@ contract MultiSigFactory {
     // a function that calls the withdraw function in multisig.sol
 
     MultiSig[] multiSigAddresses;
-    event newClone(MultiSig indexed, uint256 indexed position);
+    event newClone(MultiSig indexed , uint256 indexed position);
 
     function cloneMultiSig(address[] memory _validOwners)
         external

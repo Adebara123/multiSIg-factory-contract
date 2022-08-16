@@ -7,7 +7,13 @@ type HttpNetworkAccountsUserConfig = any;
 const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
-    goerli: {
+    hardhat:{
+      forking: {
+        //@ts-ignore
+        url: "https://ropsten.infura.io/v3/a5f8041819384497bef4f2a9f887481d",
+       }
+     },
+     goerli: {
       url: process.env.GOERLI_URL,
       accounts: [process.env.PRIVATE_KEY] as HttpNetworkAccountsUserConfig | undefined,
     },
@@ -19,3 +25,5 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
+
