@@ -2,6 +2,8 @@ import { BytesLike } from "ethers";
  import { ethers } from "hardhat";
 
  async function main() {
+
+  // code transfer ether into a contract if there is no transfer function 
  
      let provider = {
          PrivateKey: process.env.PRIVATE_KEY as BytesLike,

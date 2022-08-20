@@ -20,10 +20,6 @@ async function main() {
   const MULTISIG = await ethers.getContractAt("Imultisig", CONTRACTADDRESS);
 
   
-
-  
-
-  
 // const address = "0x1234567890123456789012345678901234567890";
       const add1 = "0x7A3E0DFf9B53fA0d3d1997903A48677399b22ce7";
       await helpers.impersonateAccount(add1);
